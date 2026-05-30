@@ -3,7 +3,7 @@
 Codex DeepSeek Bridge — 将 OpenAI Responses API 翻译为 DeepSeek Chat Completions API。
 基于 codex-deepseek (yangfei4913438) 架构重写，零外部依赖。
 
-Codex (Responses API) → 本代理 (127.0.0.1:11435) → DeepSeek Chat API
+Codex (Responses API) → 本代理 (127.0.0.1:18035) → DeepSeek Chat API
 """
 
 import json, sys, os, time, uuid, re
@@ -37,7 +37,7 @@ _load_dotenv()
 
 # ========== 配置 ==========
 LISTEN_HOST = "127.0.0.1"
-LISTEN_PORT = 11435
+LISTEN_PORT = 18035
 UPSTREAM_BASE = "https://api.deepseek.com/v1"
 UPSTREAM_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 DEFAULT_MODEL = "deepseek-v4-pro"

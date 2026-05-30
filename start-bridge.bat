@@ -16,8 +16,8 @@ if not exist ".env" (
     echo.
 )
 
-REM 杀掉占用 11435 端口的旧进程
-for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":11435" ^| findstr "LISTENING"') do (
+REM 杀掉占用 18035 端口的旧进程
+for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":18035" ^| findstr "LISTENING"') do (
     echo [INFO] 杀掉旧进程 PID:%%a
     taskkill /F /PID %%a >nul 2>&1
 )
