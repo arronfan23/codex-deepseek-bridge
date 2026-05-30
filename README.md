@@ -80,6 +80,9 @@ wire_api = "responses"
 requires_openai_auth = true
 base_url = "http://127.0.0.1:18035"
 EOF
+
+```
+name后面自定义想要显示什么（模型）就填什么，如name = "deepseek-v4-pro"
 ```
 
 再设置认证（会提示输入 API Key）：
