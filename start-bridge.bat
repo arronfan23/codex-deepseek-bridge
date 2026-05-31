@@ -1,5 +1,5 @@
 @echo off
-chcp 65001 >nul
+chcp 650010 >nul
 title Codex DeepSeek Bridge
 
 echo.
