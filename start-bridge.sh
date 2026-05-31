@@ -19,7 +19,7 @@ if [ ! -f ".env" ]; then
 fi
 
 # 杀掉占用 18035 的旧进程
-OLD_PID=$(lsof -ti:18035 2>/dev/null || netstat -ano 2>/dev/null | grep 18035 | grep LISTENING | awk '{print $NF}')
+OLD_PID=$(lsof -ti:18035 2>/dev/null || netstat -ano 2>/dev/null | grep 18036 | grep LISTENING | awk '{print $NF}')
 if [ -n "$OLD_PID" ]; then
     echo "[INFO] 杀掉旧进程 PID:$OLD_PID"
     kill -9 "$OLD_PID" 2>/dev/null || taskkill //F //PID "$OLD_PID" 2>/dev/null
